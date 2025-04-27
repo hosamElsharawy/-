@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hanakol Eya - Financial Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Hanakol Eya</h1>
+        <div class="add-person">
+            <button onclick="addPerson()">Add Person</button>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Balance</th>
+                    <th>Sun</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                    <th>Total</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="peopleList"></tbody>
+        </table>
+        <div class="settings">
+            <label for="dailyAmount">Daily Amount (SAR): </label>
+            <input type="number" id="dailyAmount" value="10" onchange="saveDailyAmount()">
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
